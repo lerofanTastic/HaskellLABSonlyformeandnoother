@@ -1,9 +1,0 @@
-main :: IO()
-main = do
-    a <- getLine
-    print $ getLast a
- 
-getLast ::[a] -> a
-getLast [] = error "Nichego net"
-getLast [x] = x
-getLast (x:z) = getLast z
